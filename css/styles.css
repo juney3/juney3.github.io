@@ -1,3 +1,28 @@
 * {
   box-sizing: border-box;
 }
+
+h3 {
+  margin-top: 0;
+}
+
+.container {
+  margin: 0 auto 0;
+}
+header {
+  background-color: yellow;
+  margin: 0;
+}
+
+main {
+  background-color: lightgreen;
+}
+
+section {
+  background-color: aqua;
+}
+
+footer {
+  background-color: hotpink;
+  margin: 0;
+}
