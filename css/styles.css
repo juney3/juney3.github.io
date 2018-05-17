@@ -4,13 +4,19 @@
 
 h3 {
   margin-top: 0;
+  color: #FFFFFF;
 }
 
 .container {
   margin: 0 auto 0;
 }
-header {
-  background-color: yellow;
+
+.headerHero {
+  height: 400px;
+  background-image: url(../images/bay-beach-black-and-white-533996.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center middle;
   margin: 0;
 }
 
@@ -18,8 +24,26 @@ main {
   background-color: lightgreen;
 }
 
+
 section {
   background-color: aqua;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.aboutContent img {
+  width: 25%;
+  height: 25%;
+}
+
+.aboutContent p {
+  width: 60%;
 }
 
 footer {
