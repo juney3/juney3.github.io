@@ -2,9 +2,34 @@
   box-sizing: border-box;
 }
 
-h3 {
-  margin-top: 0;
+h2, h4, h5 {
+  font-family: "Tauri", sans-serif;
+  letter-spacing: .07em;
+}
+
+h2, h4 {
   color: #FFFFFF;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h5 {
+  font-style: oblique;
+}
+
+p {
+  line-height: 1.618em;
+  font-size: 1.2em;
+}
+
+.mainNav {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #010101;
 }
 
 .container {
@@ -16,8 +41,9 @@ h3 {
   background-image: url(../images/bay-beach-black-and-white-533996.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center middle;
-  margin: 0;
+  background-position: center bottom;
+  background-attachment: fixed;
+  margin: 50px 0 0;
 }
 
 main {
@@ -37,13 +63,13 @@ section {
   height: auto;
 }
 
-.aboutContent img {
-  width: 25%;
-  height: 25%;
+.aboutImage img {
+  width: 100%;
+  height: auto%;
 }
 
-.aboutContent p {
-  width: 60%;
+input:not([type]), input[type=email], input[type=email] {
+    border: 1px solid #616161;
 }
 
 footer {

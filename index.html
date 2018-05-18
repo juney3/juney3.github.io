@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Tauri" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
     <!-- Import scripts -->
@@ -23,22 +24,23 @@
   </head>
   <body>
     <header>
+      <div class="mainNav row">
+        <a href="#" id=
+        "navAbout">About</a>
+        <a href="#" id="navProjects">Projects</a>
+        <a href="#" id=
+        "navTestimonial">Testimonials</a>
+        <a href="#" id="navContact">Contact</a>
+      </div>
       <div class="headerHero">
         <div class="container">
           <div class="headline row">
-            <h3>Well, hello! I'm June.</h3>
+            <h2>Well, hello! I&#8217;m June.</h2>
           </div>
           <div class="tagline row">
-              <h4>Full-stack developer, creative problem solver, trivia aficionado</h4>
+              <h4>Full-stack developer, creative problem solver, <span id="personality">trivia aficionado</span></h4>
           </div>
         </div>
-      </div>
-      <div class="mainNav row">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Gallery</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Contact</a>
       </div>
     </header>
     <div class="container">
@@ -47,22 +49,26 @@
           <div class="aboutSection col s12">
             <h5>About</h5>
             <div class="aboutContent">
-              <img class="circle" src="images/mycat.jpg" alt="photo of my cat" />
-              <p>
-                If one examines the predialectic paradigm of reality, one is faced with a
-                choice: either accept Foucauldian power relations or conclude that the goal of
-                the observer is significant form, but only if truth is interchangeable with
-                narrativity; if that is not the case, Bataille’s model of capitalist
-                construction is one of “capitalist desublimation”, and hence used in the
-                service of class divisions. The creation/destruction distinction which is a
-                central theme of Eco’s The Island of the Day Before is also evident in The Aesthetics of Thomas Aquinas. But Marx uses the term ‘neomodernist
-                theory’ to denote a cultural whole.
-              </p>
+              <div class="aboutImage col s3 valign-wrapper">
+                <img class="circle" src="images/mycat.jpg" alt="photo of my cat" />
+              </div>
+              <div class="aboutText col s9">
+                <p>
+                  If one examines the predialectic paradigm of reality, one is faced with a
+                  choice: either accept Foucauldian power relations or conclude that the goal of
+                  the observer is significant form, but only if truth is interchangeable with
+                  narrativity; if that is not the case, Bataille’s model of capitalist
+                  construction is one of “capitalist desublimation”, and hence used in the
+                  service of class divisions. The creation/destruction distinction which is a
+                  central theme of Eco’s The Island of the Day Before is also evident in The Aesthetics of Thomas Aquinas. But Derrida uses the term ‘neomodernist
+                  theory’ to denote a cultural whole.
+                </p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="row" id="gallery">
-          <h5>Project Gallery</h5>
+        <section class="row" id="projects">
+          <h5>Projects</h5>
           <div class="carousel">
 
           </div>
@@ -72,6 +78,41 @@
         </section>
         <section class="row" id="contact">
           <h5>Get in touch</h5>
+          <div class="contactForm col s12">
+            <div class="contactRowOne"
+            >
+            <div class="col s6">
+              <div class="input-field contactName">
+                <label for "firstName">
+                  First Name
+                </label>
+                <input type="text" id="firstName" />
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="input-field contactName">
+                <label for "lastName">
+                  Last Name
+                </label>
+                <input type="text" id="lastName" />
+              </div>
+            </div>
+          </div>
+          <div class="contactRowTwo">
+            <div class="col s12">
+              <div class="input-field contactEmail">
+                <label for "email">
+                  Email address
+                </label>
+                <input type="text" id="email" name="email" />
+              </div>
+            </div>
+          </div>
+          <div class="contactRowThree">
+            <div class="input-field contactSubmit">
+              <button type="submit" name="action" class="btn waves-effect waves-light grey darken-2" id="contactSubmit">Submit<i class="material-icons right">local_pizza</i></button>
+            </div>
+          </div>
         </section>
       </main>
     </div>
