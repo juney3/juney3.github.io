@@ -2,17 +2,18 @@
   box-sizing: border-box;
 }
 
-h2, h4, h5 {
+h2, h4, h5, .mainNav a {
   font-family: "Tauri", sans-serif;
   letter-spacing: .07em;
 }
 
 h2, h4 {
+  position: relative;
   color: #FFFFFF;
 }
 
-h2 {
-  margin-top: 0;
+h4 {
+  margin-top: 1em;
 }
 
 h5 {
@@ -20,16 +21,31 @@ h5 {
 }
 
 p {
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.618em;
   font-size: 1.2em;
 }
 
 .mainNav {
-  position: fixed;
-  top: 0;
   height: 50px;
   width: 100%;
   background-color: #010101;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.mainNav a {
+  width: 100%;
+  color: #FFFFFFF;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.mainNav a:active {
+  background-color: ##5F533D;
 }
 
 .container {
@@ -37,13 +53,37 @@ p {
 }
 
 .headerHero {
-  height: 400px;
+  height: 500px;
   background-image: url(../images/bay-beach-black-and-white-533996.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-attachment: fixed;
-  margin: 50px 0 0;
+  margin: 0;
+}
+
+.headerContent {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  background-color: rgba(1, 1, 1, .7);
+  padding: 1em 5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagline {
+  width: 80%;
+}
+
+.tagline h4 {
+  margin: .2em 0;
 }
 
 main {
@@ -53,6 +93,8 @@ main {
 
 section {
   background-color: aqua;
+  margin-top: 20px;
+  padding: 1em;
 }
 
 .aboutContent {
@@ -63,6 +105,10 @@ section {
   height: auto;
 }
 
+.aboutContent p {
+  margin: 0 2em;
+}
+
 .aboutImage img {
   width: 100%;
   height: auto%;
@@ -70,6 +116,10 @@ section {
 
 input:not([type]), input[type=email], input[type=email] {
     border: 1px solid #616161;
+}
+
+#testimonials {
+  height: 300px;
 }
 
 footer {
