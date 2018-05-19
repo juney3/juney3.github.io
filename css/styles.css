@@ -121,9 +121,23 @@ section {
   height: 500px;
 }
 
+.carouselContent {
+  position: relative;
+  top: -50px;
+  background-color: chartreuse;
+}
+
 .carousel .carousel-item {
   width: 300px;
   height: 400px;
+}
+
+.carousel .indicators .indicator-item.active {
+  background-color: #757575;
+}
+
+.carousel .indicators .indicator-item {
+  background-color: #9E9E9E;
 }
 
 /* Testimonials styling */

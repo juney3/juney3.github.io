@@ -2,7 +2,13 @@ $( document ).ready(function() {
   console.log("ready to go!");
 
   //Add carousel functionality from materializecss
-  $('.carousel').carousel();
+  $('.carousel').carousel({
+    indicators: true
+  });
+
+  //Set carousel to change images every 4 seconds
+  // setInterval(function() {
+  //   $('.carousel').carousel('next');}, 4000);
 
   //Add materialbox lightbox plugin functionality from materializecss
    $('.materialboxed').materialbox();
