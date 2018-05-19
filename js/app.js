@@ -1,26 +1,44 @@
 $( document ).ready(function() {
   console.log("ready to go!");
+
+  //Add carousel functionality from materializecss
   $('.carousel').carousel();
+
+  //Add materialbox lightbox plugin functionality from materializecss
+   $('.materialboxed').materialbox();
 });
 
 // Define content objects
-
+// personality attributes to fade into header
 var personality = ['trivia aficionado', 'cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic'];
 
+// object to hold navbar ids and their corresponding section ids
+
+var navbarItems = {
+  navAbout: 'about',
+  navProjects: 'projects',
+  navTestimonial: 'testimonials',
+  navContact: 'contact',
+}
+
+// TODO: carouselItems object to implement dynamic addition of projects
 var carouselItems = {
   giffaw: {
     image: 'images\\giffaw.png',
     alt: 'giffaw screen',
+    title: 'giffaw',
     description: 'A fun project for searching and displaying GIFs from Giphy'
   },
   geoquakes: {
     image: 'images\\geoquakes.png',
     alt: 'geoquakes screen',
+    title: 'geoquakes',
     description: 'A project that takes earthquake data from the USGS and displays them on a Google map'
   },
   kittyr: {
     image: 'images\\tama.jpg',
     alt: 'tama relaxing on the couch',
+    title: 'kittyr',
     description: "A project that provides cats-as-a-service (CAAS)"
   }
 };
@@ -33,4 +51,15 @@ var testimonials = {
   Hodor: 'Hodor. Hodor HODOR hodor, hodor hodor, hodor. Hodor hodor hodor hodor?! Hodor, hodor.'
 };
 
-//
+// Interactive page functions
+
+// On clicking a menu item in the navbar, scroll to the section
+$('.mainNav a').click(function() {
+  var navbarLink = this.id;
+  var sectionId = navbarItems[navbarLink];
+  var sectionToScroll = '#'+sectionId;
+  console.log($(sectionToScroll));
+  $('html, body').animate({
+    scrollTop:
+      $(sectionToScroll).offset().top - 70}, 'slow');
+})

@@ -26,6 +26,7 @@ p {
   font-size: 1.2em;
 }
 
+/* Header styling */
 .mainNav {
   height: 50px;
   width: 100%;
@@ -86,10 +87,10 @@ p {
   margin: .2em 0;
 }
 
+/* Main content styling */
 main {
   background-color: lightgreen;
 }
-
 
 section {
   background-color: aqua;
@@ -97,6 +98,7 @@ section {
   padding: 1em;
 }
 
+/* About section styling */
 .aboutContent {
   display: flex;
   flex-direction: row;
@@ -114,10 +116,17 @@ section {
   height: auto%;
 }
 
-input:not([type]), input[type=email], input[type=email] {
-    border: 1px solid #616161;
+/* Projects styling */
+.carousel {
+  height: 500px;
 }
 
+.carousel .carousel-item {
+  width: 300px;
+  height: 400px;
+}
+
+/* Testimonials styling */
 #testimonials {
   height: 300px;
 }
