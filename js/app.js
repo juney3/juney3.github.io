@@ -50,8 +50,8 @@ var carouselItems = {
 };
 
 var testimonials = {
-  Bob: 'This is the fun part. Just relax and let it flow. That easy. Working it up and down, back and forth. Let all these things just sort of happen. Maybe there\'s a happy little waterfall happening over here.',
-  Samuel: 'Well, the way they make shows is, they make one show. That show\'s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they\'re going to make more shows.',
+  'Bob Ross': 'This is the fun part. Just relax and let it flow. That is easy. Working it up and down, back and forth. Let all these things just sort of happen. Maybe there\'s a happy little waterfall happening over here.',
+  'Samuel Jackson': 'Well, the way they make shows is, they make one show. That show\'s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they\'re going to make more shows.',
   C3PO: 'Oh, he says it\'s nothing, sir. Merely a malfunction. Old data. Pay it no mind.',
   Cthulu: 'Ph\'nglui mglw\'nafh Cthulhu R\'lyeh wgah\'nagl fhtagn. Shugg f\'athg throd vulgtm throdor, naflChaugnar Faugn ch\'oth throdnyth Hastur nog shogg hupadgh ngluiyar geb h\'ah.',
   Hodor: 'Hodor. Hodor HODOR hodor, hodor hodor, hodor. Hodor hodor hodor hodor?! Hodor, hodor.'
@@ -83,16 +83,18 @@ function showTestimonials(testimonials) {
 
     console.log(`${person}: ${quote}`);
 
-    $('.testimonialQuote').html('<p>\"' + quote + '\"');
+    $('.testimonialContent').fadeIn(5000).delay(2000).fadeOut(3000, function(){
+      $('.testimonialQuote').html(`<p>\"${quote}\"`);
 
-    $('.testimonialPerson').html('<p>&mdash; ' + person);
+      $('.testimonialPerson').html(`<p>&mdash; ${person}`);
+    });
 
-  index++;
+    index++;
 
     if(index === person.length) {
       index = 0;
     }
-  }, 5000);
+  }, 10000);
 }
 
 showTestimonials(testimonials);
