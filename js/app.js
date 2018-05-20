@@ -16,7 +16,7 @@ $( document ).ready(function() {
 
 // Define content objects
 // personality attributes to fade into header
-var personality = ['trivia aficionado', 'cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic'];
+var personality = ['trivia aficionado', 'cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic', 'garment constructor', 'adept researcher'];
 
 // object to hold navbar ids and their corresponding section ids
 
@@ -68,4 +68,31 @@ $('.mainNav a').click(function() {
   $('html, body').animate({
     scrollTop:
       $(sectionToScroll).offset().top - 70}, 'slow');
-})
+});
+
+function showTestimonials(testimonials) {
+  var quote, person;
+
+  var index = 0;
+
+  var testifiers = Object.keys(testimonials);
+
+  var interval = setInterval(function(){
+    person = testifiers[index];
+    quote = testimonials[person];
+
+    console.log(`${person}: ${quote}`);
+
+    $('.testimonialQuote').html('<p>\"' + quote + '\"');
+
+    $('.testimonialPerson').html('<p>&mdash; ' + person);
+
+  index++;
+
+    if(index === person.length) {
+      index = 0;
+    }
+  }, 5000);
+}
+
+showTestimonials(testimonials);
