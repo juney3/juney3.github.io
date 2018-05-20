@@ -100,6 +100,7 @@ function switchPersonalAttributes(personalAttributes) {
   },6000);
 }
 
+//Run showTestimonials and switchPersonalAttributes
 showTestimonials(testimonials);
 
 switchPersonalAttributes(personalAttributes);
