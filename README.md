@@ -1,3 +1,29 @@
+<h2>Project 0: An explanation</h2>
+
+<p>Materialize CSS inserted its own readme into this file, so I've left it in at the bottom of this page.</p>
+
+<p>This readme explains various aspects of Project 0, which is an early version of a portfolio "about me" page. I'll cover the following items:</p>
+<ol>
+  <li>Technologies used</li>
+  <li>Process and approach</li>
+  <li>Unsolved problems</li>
+  <li>Biggest wins and challenges</li>
+</ol>
+  
+<h4>1. Technologies used</h4>
+<p>In building this project, I used the following technologies:</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Materialize CSS</li>
+  <li>JavaScript</li>
+  <li>jQuery<li>
+  <li>Font Awesome icons</li>
+</ul>
+<p>With regard to CSS, I used a combination of Materialize CSS and flexbox. Materialize did a lot of the heavy lifting in some regards (especially with the carousel and lightbox features), but it also took a fair amount of tinkering before I got it to work and appear the way I wanted to.</p>
+
+
+
 <p align="center">
   <a href="http://materializecss.com/">
     <img src="http://materializecss.com/res/materialize.svg" width="150">
