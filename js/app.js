@@ -16,16 +16,7 @@ $( document ).ready(function() {
 
 // Define content objects
 // personality attributes to fade into header
-var personality = ['trivia aficionado', 'cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic', 'garment constructor', 'adept researcher'];
-
-// object to hold navbar ids and their corresponding section ids
-
-var navbarItems = {
-  navAbout: 'about',
-  navProjects: 'projects',
-  navTestimonial: 'testimonials',
-  navContact: 'contact',
-}
+var personalAttributes = ['cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic', 'intermediate sewist', 'adept researcher', 'trivia aficionado'];
 
 // TODO: carouselItems object to implement dynamic addition of projects
 var carouselItems = {
@@ -61,15 +52,14 @@ var testimonials = {
 
 // On clicking a menu item in the navbar, scroll to the section
 $('.mainNav a').click(function() {
-  var navbarLink = this.id;
-  var sectionId = navbarItems[navbarLink];
-  var sectionToScroll = '#'+sectionId;
-  console.log($(sectionToScroll));
+  var section = $(this).attr('href');
+
   $('html, body').animate({
     scrollTop:
-      $(sectionToScroll).offset().top - 70}, 'slow');
+      $(section).offset().top - 70}, 'slow');
 });
 
+//Function to iterate through testimonials object and fade in/fade out testimonials
 function showTestimonials(testimonials) {
   var quote, person;
 
@@ -80,8 +70,6 @@ function showTestimonials(testimonials) {
   var interval = setInterval(function(){
     person = testifiers[index];
     quote = testimonials[person];
-
-    console.log(`${person}: ${quote}`);
 
     $('.testimonialContent').fadeIn(5000).delay(2000).fadeOut(3000, function(){
       $('.testimonialQuote').html(`<p>\"${quote}\"`);
@@ -97,4 +85,21 @@ function showTestimonials(testimonials) {
   }, 10000);
 }
 
+//Function to switch out the personality attributes in the header
+function switchPersonalAttributes(personalAttributes) {
+  var i = 0;
+
+  var switchInterval = setInterval(function(){
+    $('#personalAttribute').text(personalAttributes[i]);
+
+    i++;
+
+    if (i === personalAttributes.length) {
+      i = 0;
+    }
+  },6000);
+}
+
 showTestimonials(testimonials);
+
+switchPersonalAttributes(personalAttributes);
