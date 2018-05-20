@@ -179,12 +179,23 @@ section {
 footer {
   height: 200px;
   margin: 0;
+  position: relative;
+  width: 100%;
 }
 
 .footerContent {
+  width: 100%;
+  position: absolute;
+  top: 20;
+  left: 0;
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.footerContent p {
+  font-size: .9em;
+  letter-spacing: .3em;
 }
