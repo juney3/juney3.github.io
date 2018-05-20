@@ -45,7 +45,7 @@
 </ul>
 <p>Biggest challenges...</p>
 <ul>
-  <li>Struggling to understand why I couldn't get the setInterval method to work by iterating through an object using the for(keys in object) loop. I still don't really understand why using for(keys in object) doesn't work. Maybe the iteration occurs too quickly, while in the method that I ended up using, which I found on Stack Overflow, extracts an array that you iterate through with each interval rather than setting up a for loop. I should probably try to understand what exactly happens with setInterval() in jQuery.</li>
+  <li>Struggling to understand why I couldn't get the setInterval method to work by iterating through an object using the for(keys in object) loop.</li>
   <li>Learning how to work with and adjust Materialize's built-in components and definitions. </li>
 </ul>
 
