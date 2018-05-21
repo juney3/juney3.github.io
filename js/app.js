@@ -5,7 +5,7 @@ $( document ).ready(function() {
   //Define content objects
 
   //Personality attributes to fade into header
-  var personalAttributes = ['cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic', 'intermediate sewist', 'adept researcher', 'trivia aficionado'];
+  var personalAttributes = ['cooking enthusiast', 'avid gamer', 'lyric soprano', 'recovering academic', 'experienced sewist', 'adept researcher', 'trivia aficionado'];
 
   // TODO: carouselItems object to implement dynamic addition of projects
   var carouselItems = {
