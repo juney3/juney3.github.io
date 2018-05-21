@@ -76,6 +76,7 @@ p {
 }
 
 .headline {
+  width: 100%;
   background-color: rgba(1, 1, 1, .7);
   padding: 1em 5em 2em;
   display: flex;
@@ -83,9 +84,9 @@ p {
   align-items: center;
 }
 
-.tagline {
+/*.tagline {
   width: 80%;
-}
+}*/
 
 .tagline h4 {
   margin: .2em 0;
@@ -210,17 +211,22 @@ footer {
 
 /* Media queries */
 
-/*Tablet size*/
-@media only screen and (max-width : 800px) {
-  p {
-
-  }
+/*Tablet sizes*/
+@media only screen and (max-width: 860px) {
   h2 {
-    font-size: 2em;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width : 750px) {
+  h2 {
+    font-size: 2.5em;
+    width: 100%;
   }
 
   h4 {
-    font-size: 1.4em;
+    font-size: 1.7em;
+    width: 100%;
   }
 
   .navbar-fixed ul li {
@@ -239,14 +245,88 @@ footer {
 
   .headerContent {
     height: 350px;
+    width: 100%;
+    padding: 0 0 20px;
   }
 
-  .tagline {
-    width: 90%;
+
+  .aboutContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImage {
+    margin-bottom: 15px;
   }
 
 }
 
+@media only screen and (max-width : 660px) {
+  h2 {
+    font-size: 2.2em;
+  }
+
+  h4 {
+    font-size: 1.8em;
+  }
+}
+
 /*Phone size*/
 @media only screen and (max-width : 500px) {
+
+  h2, h4, .aboutText {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  .headerHero {
+    height: 300px;
+  }
+
+  .headerContent {
+    height: 300px;
+  }
+  .headline{
+    padding: 0 0 20px;
+  }
+
+  .aboutImage {
+    margin-bottom: 15px;
+  }
+
+  .card {
+    width: 250px;
+    height: auto;
+  }
+
+  .card-action a {
+    font-size: .8em;
+  }
+
+  .testimonialContent {
+    margin-top: 40px;
+  }
+
+  .contactRowOne, .contactRowTwo, {
+    display: column;
+  }
+
+  .socialLinks {
+    width: 70%;
+  }
+
 }
