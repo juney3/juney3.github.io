@@ -126,12 +126,12 @@ section {
 
 .carouselContent {
   position: relative;
-  top: -40px;
+  top: -50px;
 }
 
 .carousel .carousel-item {
   width: 300px;
-  height: 400px;
+  height: 350px;
 }
 
 .carousel .indicators .indicator-item.active {
