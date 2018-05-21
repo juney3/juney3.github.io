@@ -121,7 +121,7 @@ section {
 
 /* Projects styling */
 .carousel {
-  height: 500px;
+  height: 550px;
 }
 
 .carouselContent {
@@ -130,7 +130,7 @@ section {
 }
 
 .carousel .carousel-item {
-  width: 300px;
+  width: 330px;
   height: 350px;
 }
 
