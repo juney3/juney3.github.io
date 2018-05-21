@@ -1,5 +1,12 @@
 $( document ).ready(function() {
   //Define global variables
+
+  //Main Nav Bar variables - for active link
+  var mainNavBar = document.getElementById('mainNavBar');
+
+  var navLinks = mainNavBar.getElementsByTagName('a');
+
+  //Carousel interval variable for stopping autoplay
   var carouselInterval;
 
   //Define content objects
@@ -78,6 +85,21 @@ $( document ).ready(function() {
         $(section).offset().top - 70}, 'slow');
   });
 
+//Function to highlight active main nav bar link
+  function showHighlighted() {
+    for (var i = 0; i < navLinks.length; i++) {
+      $('li a').click(function() {
+        console.log('clicked');
+
+        var current = document.getElementsByClassName('highlighted');
+
+        $(current[0]).removeClass('highlighted');
+
+        $(this).addClass('highlighted');
+      })
+    }
+  }
+
   //Function to iterate through testimonials object and fade in/fade out testimonials. I found this basic pattern on a comment on Stack Overflow, and am still not sure why it works better than using a for(keys in obj) iteration, though I understand what happens at each point in the code.
   function showTestimonials(testimonials) {
     var quote, person;
@@ -125,5 +147,7 @@ $( document ).ready(function() {
   showTestimonials(testimonials);
 
   switchPersonalAttributes(personalAttributes);
+
+  showHighlighted();
 
 });

@@ -7,12 +7,11 @@ h2, h4, h5, .mainNav a {
   letter-spacing: .07em;
 }
 
-nav, footer {
+nav, footer, nav ul a {
   background-color: #010101;
-  color: #FFFFFF;
 }
 
-h2, h4 {
+h2, h4, nav, footer {
   color: #FFFFFF;
 }
 
@@ -56,6 +55,14 @@ p {
   font-size: 1.4em;
 }
 
+.highlighted {
+  border-bottom: 4px solid #29A7FF;
+}
+
+nav ul a:hover {
+  background-color: #4F473C;
+}
+
 .headerHero {
   height: 600px;
   background-color: #7A6746;
@@ -83,10 +90,6 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
-/*.tagline {
-  width: 80%;
-}*/
 
 .tagline h4 {
   margin: .2em 0;
@@ -259,6 +262,10 @@ footer {
     margin-bottom: 15px;
   }
 
+  .testimonialContent {
+    margin-top: 40px;
+  }
+
 }
 
 @media only screen and (max-width : 660px) {
@@ -315,10 +322,6 @@ footer {
 
   .card-action a {
     font-size: .8em;
-  }
-
-  .testimonialContent {
-    margin-top: 40px;
   }
 
   .contactRowOne, .contactRowTwo, {
