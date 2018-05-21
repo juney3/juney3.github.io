@@ -60,7 +60,7 @@ $( document ).ready(function() {
      $('.sidenav').sidenav();
 
   //Autoplay carousel
-  //Set carousel to change images every 4 seconds
+  //Set carousel to change images every 5 seconds
   function runAutoplay() {
     carouselInterval = setInterval(function() {
      $('.carousel').carousel('next');}, 5000);
@@ -73,7 +73,7 @@ $( document ).ready(function() {
     $('ul.indicators').hide();
   }
 
-  //Set event listener on .carousel-item to listen for mouse enter/mouse leave events. If a mouse enters the item, run stopAutoplay; if the mouse leaves the item, runAutoplay.
+  //Set event listener on .carousel-item to listen for mouse enter/mouse leave events. If a mouse enters the item, invoke stopAutoplay; if the mouse leaves the item, invoke runAutoplay. Based off of Aaron's solution, which he kindly shared.
   $('.carousel-item').hover(stopAutoplay, runAutoplay);
 
   //On clicking a menu item in the navbar, scroll gently to the section
@@ -85,7 +85,8 @@ $( document ).ready(function() {
         $(section).offset().top - 70}, 'slow');
   });
 
-//Function to highlight active main nav bar link
+//Function to highlight active main nav bar link. Based on a JS tutorial from w3schools, but I included jQuery. The function first gathers any list item a tags that have already had the highlighted class applied and clears it; it then applies the highlighted class to the a tag that was clicked.
+
   function showHighlighted() {
     for (var i = 0; i < navLinks.length; i++) {
       $('li a').click(function() {
