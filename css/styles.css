@@ -43,13 +43,17 @@ p {
 
 .mainNav a {
   width: 100%;
-  color: #FFFFFFF;
-  font-size: 1.1em;
+  color: #FFFFFF;
   text-align: center;
+  font-size: 1.4em;
 }
 
-.mainNav a:active {
-  background-color: #5F533D;
+.mainNav ul {
+  width: 100%;
+}
+
+.mainNav ul li {
+  width: 25%;
 }
 
 .container {
@@ -198,4 +202,11 @@ footer {
 .footerContent p {
   font-size: .9em;
   letter-spacing: .3em;
+}
+
+.socialLinks {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
