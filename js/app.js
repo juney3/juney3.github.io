@@ -89,8 +89,6 @@ $( document ).ready(function() {
   function showHighlighted() {
     for (var i = 0; i < navLinks.length; i++) {
       $('li a').click(function() {
-        console.log('clicked');
-
         var current = document.getElementsByClassName('highlighted');
 
         $(current[0]).removeClass('highlighted');
