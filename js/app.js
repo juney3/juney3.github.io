@@ -98,7 +98,7 @@ $( document ).ready(function() {
     }
   }
 
-  //Function to iterate through testimonials object and fade in/fade out testimonials. I found this basic pattern on a comment on Stack Overflow, and am still not sure why it works better than using a for(keys in obj) iteration, though I understand what happens at each point in the code.
+  //Function to iterate through testimonials object and fade in/fade out testimonials. I found this basic pattern on a comment on Stack Overflow, and the key is to use setInterval and an index to iterate through an array of object keys›.
   function showTestimonials(testimonials) {
     var quote, person;
 
