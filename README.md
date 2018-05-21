@@ -27,7 +27,7 @@
 
 <p>After settling on a layout, I started building the page's structure in semantic HTML. I started with the large main sections (header, main, footer) and then filled those in with child divs that more-or-less conformed to the constraints that are required by Materialize and Flexbox. After I had the main HTML sections in place, I added some basic content placeholders, and links for importing the  various libraries, frameworks, and fonts.</p>
 
-<p>On Friday, I added and styled content for the header and the main section. I also started on the JS file. My entire Friday was spent working on the nav links, hero image, carousel, and lightbox. Most of Saturday was spent working on/troubleshooting/implementing a solution for getting the testimonials to fade in and out on a timer. I also started working on the footer content, and started writing this readme.</p>
+<p>On Friday, I added and styled content for the header and the main section. I also started on the JS file. My entire Friday was spent working on the nav links, hero image, carousel, and lightbox. Most of Saturday was spent working on/troubleshooting/implementing a solution for getting the testimonials to fade in and out on a timer. I also started working on the footer content, and started writing this readme. I spent Sunday trying different methods of getting the carousel to stop autoplay on lightboxing, and working on making the site more fully responsive.</p>
 
 <h4>3. Unsolved problems</h4>
 <p>The page has some odd side effects that occur, but I think it's because I'm a newbie when it comes to Materialize, JS, and jQuery. I'll list the main things I noticed here:</p>
@@ -35,6 +35,7 @@
   <li>When I click an item in the carousel to lightbox it, the top of the card is hidden by the top nav even though the card is set to a z-index of 1000 (at a higher level than the nav) and an opacity of 1.</li>
   <li>Another lightbox issue: if I lightbox a carousel item and the Testimonials section is showing, the testimonials fade in and out on top of the lightboxed card.</li>
   <li>Because of the way I implemented the fade in/fade out interval, the testimonials take longer to load than I'd like.</li>
+  <li>Some of the responsive settings are a little wonky. Materialize has set device widths for phone/tablet/larger screens, and I noticed some idiosyncratic behavior while resizing the page, especially with content formatting.</li>
 </ul>
 
 <h4>4. Biggest wins and challenges</h4>
@@ -42,21 +43,26 @@
 <ul>
   <li>Getting the testimonials to load into the page dynamically by using JS and jQuery, and then figuring out how to get them to fade in and out. It's not perfect, but it works.</li>
   <li>Figuring out how to override Materialize's CSS settings.</li>
+  <li>Getting the carousel to work: displaying/configuring cards, autoplay, lightboxing.</li>
+  <li>Getting the site mobile-ready by using Materialize's side nav and grid column features.</li>
 </ul>
 <p>Biggest challenges...</p>
 <ul>
   <li>Struggling to understand why I couldn't get the setInterval method to work by iterating through an object using the for(keys in object) loop.</li>
   <li>Learning how to work with and adjust Materialize's built-in components and definitions. </li>
+  <li>Struggling to understand how event listeners work, in conjunction with other jQuery methods.</li>
+  <li>Adding media queries and making the HTML / CSS work with Materialize's approach to responsive websites.</li>
 </ul>
 
-
-
-
-
-
-
-
-
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
 
 <p align="center">
   <a href="http://materializecss.com/">
