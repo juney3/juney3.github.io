@@ -28,10 +28,35 @@
 
     <!-- Header section -->
     <header>
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper mainNav">
-            <ul id="nav-mobile" class="center">
+      <!-- Main navigation section for large screens -->
+      <div class="mainNav">
+        <div class="container">
+          <div class="navbar-fixed">
+            <nav>
+              <div class="nav-wrapper">
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="hide-on-small-and-down">
+                  <li>
+                    <a href="#about" id=
+                    "navAbout">About</a>
+                  </li>
+                  <li>
+                    <a href="#projects" id="navProjects">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#testimonials" id=
+                    "navTestimonial">Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#contact" id="navContact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- Sidebar navigation HTML -->
+          <div>
+            <ul id="mobile-nav" class="sidenav">
               <li>
                 <a href="#about" id=
                 "navAbout">About</a>
@@ -47,10 +72,11 @@
                 <a href="#contact" id="navContact">Contact</a>
               </li>
             </ul>
-
           </div>
-        </nav>
+        </div>
       </div>
+
+      <!-- Hero content -->
       <div class="headerHero">
         <div class="container">
           <div class=" headerContent">

@@ -39,13 +39,18 @@ $( document ).ready(function() {
 
   //Interactive page functions
 
-  //Add carousel functionality from Materialize
-  $('.carousel').carousel({
-    indicators: true
-  });
+  //Materialize functions
 
-  //Add materialbox lightbox plugin functionality from Materialize
-   $('.materialboxed').materialbox();
+    //Add carousel functionality from Materialize
+    $('.carousel').carousel({
+      indicators: true
+    });
+
+    //Add materialbox lightbox plugin functionality from Materialize
+     $('.materialboxed').materialbox();
+
+     //Add sidenav functionality from Materialize
+     $('.sidenav').sidenav();
 
   //Autoplay carousel
   //Set carousel to change images every 4 seconds

@@ -7,7 +7,7 @@ h2, h4, h5, .mainNav a {
   letter-spacing: .07em;
 }
 
-.mainNav, footer {
+nav, footer {
   background-color: #010101;
   color: #FFFFFF;
 }
@@ -31,33 +31,30 @@ p {
   font-size: 1.2em;
 }
 
+.mainNav .container {
+  margin: 0;
+}
+
 /* Header styling */
 .mainNav {
-  height: 50px;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.mainNav a {
-  width: 100%;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 1.4em;
-}
-
-.mainNav ul {
+.navbar-fixed, .navbar-fixed ul, .navbar-fixed ul li a {
   width: 100%;
 }
 
-.mainNav ul li {
+.navbar-fixed ul li {
   width: 25%;
 }
 
-.container {
-  margin: 0 auto 0;
+.navbar-fixed ul li a {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.4em;
 }
 
 .headerHero {
@@ -210,3 +207,6 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+
+
+/* Media queries */
